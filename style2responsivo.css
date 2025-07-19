@@ -362,6 +362,9 @@ margin-right: 37px;
 cursor: default;
 }
 
+#sectionTitleinfo em {
+margin-top: 23px;
+}
 
 em {
 position: absolute;
