@@ -1,0 +1,543 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+
+<meta name="google" content="nositelinkssearchbox">
+<meta name="google" content="nopagereadaloud">
+<meta name="google" content="nositelinkssearchbox">
+<meta name="googlebot" content="noindex, noarchive, nosnippet">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet"> 
+
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Trilho do Sistema Solar</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+    // se o elemento não estiver vísivel, surge com a função e vice-versa
+function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+}
+
+    // função dos archors
+
+    function cycleAnchor(anchorId) {
+    const targetElement = document.getElementById(anchorId);
+
+    if (targetElement) {
+
+        const elementTop = targetElement.getBoundingClientRect().top + window.scrollY;
+
+
+        window.scrollTo({
+            top: elementTop - 350,   
+            behavior: 'smooth'       
+        });
+    }
+}
+
+    // segunda função de visibilidade, usada nos wrappers das tooltips
+
+function toggle_visibility1(...ids) {
+    const elementsToToggle = ids.map(id => document.getElementById(id));
+
+
+    document.querySelectorAll('.show').forEach(el => {
+        if (!elementsToToggle.includes(el)) {
+            el.classList.remove('show');
+        }
+    });
+
+
+    elementsToToggle.forEach(el => {
+        el.classList.toggle('show');
+    });
+}
+
+
+</script>
+</head>
+
+
+    <body style="background-color: #12152d;">
+
+        <div class="container-fluid" id="top">
+            <div class="row rowtop">
+    
+    
+    <!-- Caminho para Index -->
+    
+                <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2 col-xxl-1">
+                    <img style="float: right;"  src="imagens/menuVbar.png"/>
+    
+                    <span id="sectionTitle" style="cursor: none;"><a href="index.html" style="	font-family: inherit;
+                        font-size: inherit;
+                        margin-right: 20px; text-decoration: none; float: left;" id="name">Trilho do<br> Sistema<br> Solar</a></span>
+                </div>
+    
+    
+    <!-- Nome Pag -->
+    <div class="d-none d-md-block col-md-8 col-lg-8 col-xl-7 col-xxl-6">
+        <div class="sistemaSolar" id="sistemaSolar">
+            <a  onclick="cycleAnchor('sol')"><img src="imagens/sol_off.png" onmouseover="this.src='imagens/sol_on.png'" onmouseout="this.src='imagens/sol_off.png'" title="Sol" /></a>
+            <a  onclick="cycleAnchor('mercurio')"><img src="imagens/mercurio_off.png" onmouseover="this.src='imagens/mercurio_on.png'" onmouseout="this.src='imagens/mercurio_off.png'" title="Merc rio" /></a>
+            <a  onclick="cycleAnchor('venus')"><img src="imagens/venus_off.png" onmouseover="this.src='imagens/venus_on.png'" onmouseout="this.src='imagens/venus_off.png'" title="V nus" /></a>
+            <a  onclick="cycleAnchor('terra')"><img src="imagens/terra_off.png" onmouseover="this.src='imagens/terra_on.png'" onmouseout="this.src='imagens/terra_off.png'" title="Terra e Lua" /></a>
+            <a  onclick="cycleAnchor('marte')"><img src="imagens/marte_off.png" onmouseover="this.src='imagens/marte_on.png'" onmouseout="this.src='imagens/marte_off.png'" title="Marte" /></a>
+            <a  onclick="cycleAnchor('ceres')"><img src="imagens/ceres_off.png" onmouseover="this.src='imagens/ceres_on.png'" onmouseout="this.src='imagens/ceres_off.png'" title="Ceres" /></a>
+            <a  onclick="cycleAnchor('jupiter')"><img src="imagens/jupiter_off.png" onmouseover="this.src='imagens/jupiter_on.png'" onmouseout="this.src='imagens/jupiter_off.png'" title="J piter" /></a>
+            <a  onclick="cycleAnchor('saturno')"><img src="imagens/saturno_off.png" onmouseover="this.src='imagens/saturno_on.png'" onmouseout="this.src='imagens/saturno_off.png'" title="Saturno" /></a>
+            <a  onclick="cycleAnchor('urano')"><img src="imagens/urano_off.png" onmouseover="this.src='imagens/urano_on.png'" onmouseout="this.src='imagens/urano_off.png'" title="Urano" /></a>
+            <a  onclick="cycleAnchor('neptuno')"><img src="imagens/neptuno_off.png" onmouseover="this.src='imagens/neptuno_on.png'" onmouseout="this.src='imagens/neptuno_off.png'" title="Neptuno" /></a>
+         </div>
+    
+        
+    </div>
+    
+    
+    
+    <!-- Menu dos Idiomas -->
+    
+                <div class="col-3 col-sm-4 col-md-1 col-lg-1 col-xl-2 col-xxl-4">
+                    <img  src="imagens/menuVbar.png" style="float: left;" />
+    
+                    <span id="sectionTitle2"><div class="lanmenu1" style="padding-top: 6px;">
+        
+                            <div style="width: 60px">
+                                <span style="margin-left: 2%;"   class="sectionTitle" id="language">PT</span>
+                                        <a id="clickme" style="cursor: pointer;"  onclick="toggle_visibility('hamMenulang1');"><img style="padding-left: 12%;" src="imagens/setaDown_off.png" id="seta" /></a>
+                                        <div id="hamMenulang1">
+                                            <ul>
+    
+                                                <li class="hamMenulangTop1"><button class="btn" onclick = "switchLang('ca'); toggle_visibility('hamMenulang1')"> Català </button></li>
+                                                <li class="hamMenulangTop1"><button class="btn" onclick = "switchLang('de'); toggle_visibility('hamMenulang1')"> Deutsch </button></li>
+                                                <li class="hamMenulangTop1"><button class="btn" onclick = "switchLang('en'); toggle_visibility('hamMenulang1')"> English </button></li>
+                                                <li class="hamMenulangTop1" ><button class="btn" onclick = "switchLang('es'); toggle_visibility('hamMenulang1')"> Castellano </button></li>
+                                                <li class="hamMenulangTop1"><button class="btn" onclick = "switchLang('fr'); toggle_visibility('hamMenulang1')"> Français </button></li>
+                                                <li class="hamMenulangTop1" ><button class="btn" onclick = "switchLang('hr'); toggle_visibility('hamMenulang1')"> Hrvatski </button></li>
+                                                <li class="hamMenulangTop1"><button class="btn" onclick = "switchLang('it'); toggle_visibility('hamMenulang1')"> Italian </button></li>
+                                                <li class="hamMenulangTop1"><button class="btn" onclick = "switchLang('hu'); toggle_visibility('hamMenulang1')"> Magyar </button></li>
+                                                <li class="hamMenulangTop1"><button class="btn" onclick = "switchLang('pt'); toggle_visibility('hamMenulang1')"> Português </button></li>
+                                                <li class="hamMenulangTop1"><button class="btn" onclick = "switchLang('sv'); toggle_visibility('hamMenulang1')"> Svenska </button></li>
+                                                <li class="hamMenulangTop1"><button class="btn" onclick = "switchLang('el'); toggle_visibility('hamMenulang1')"> ελληνικά </button></li>
+         
+                                            </ul>
+                                            <hr noshade="noshade" />
+        
+                                         </div>
+                                        </div>
+                                      </div></span>
+                </div>
+     
+    
+    <!-- Links do TopMenu -->
+    
+
+    
+    <!-- Menu Hamburguer -->
+                
+                    <div class="col-2 col-sm-2 col-md-1 col-lg-1 col-xl-1">
+                 
+                        <div id="hamburguer">
+                            <a onclick="toggle_visibility('hamMenu');"><img src="imagens/menuButton.png" /></a>
+                            <div id="hamMenucontainer" onmouseleave="toggle_visibility('hamMenu');"><div id="hamMenu">
+                                <ul>
+                                    <li class="hamMenuTop"><a href="#" onclick="toggle_visibility('hamMenu');" id="menutrilhoname">TRILHO DO SISTEMA SOLAR</a></li>
+                                    <li class="hamMenuTop"><a href="InformacaodoTrilho.html" id="menuinfoname">INFORMAÇÃO DO TRILHO</a></li>
+                                    <li class="hamMenuTop"><a href="FichaTecnica.html" id="menufichaname">FICHA TÉCNICA </a></li> 
+                                </ul>
+                                <hr noshade="noshade" />
+                                   <ul>
+                                     <li class="hamMenuBottom"><a href="https://astrocamp.astro.up.pt/pt/" onclick="toggle_visibility('hamMenu');" target="_blank">ASTROCAMP</a></li>
+                                   <li class="hamMenuBottom"><a href="https://www.paredesdecoura.pt/locais/centro-de-educacao-e-interpretacao-ambiental/" onclick="toggle_visibility('hamMenu');" target="_blank">CEIA</a></li>
+                                   <li class="hamMenuBottom" ><a href="https://www.paredesdecoura.pt/" onclick="toggle_visibility('hamMenu');" target="_blank" id="municipiomenu">MUNICÍPIO PAREDES DE COURA</a></li>
+                                </ul>
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    <!-- Fim TopMenu -->
+        </div>   
+            </div>
+    
+    
+
+
+
+	<div class="contentContainerImage">
+    	
+		<div class="contentWide">
+			<div class="topText">
+        <strong id="trilhoname_MD">TRILHO DO SISTEMA SOLAR</strong>
+				<p id="trilhodescricao_MD">Modelo à escala 1 : 831 000 000 nas distâncias e nas dimensões dos principais astros do Sistema Solar.<br />O Sol, localizado no CEIA - Centro de Educação e Interpretação Ambiental da Paisagem Protegida de Corno de Bico, tem 170 cm de diâmetro e os planetas à escala estão distribuídos ao longo de um trilho com cerca de 8,6 km.</p>
+                <a href="InformacaodoTrilho.html" id="sabermais_MD">[ SABER MAIS ]</a>
+            </div>
+
+
+
+                    
+
+            <div class="selectorcol_LG" style="z-index: 999; width: 150px; margin-top: 60px;" >
+                <span style=" z-index: 999; display: inline;	font-size: 12px;" id="UAoptionlabel_LG" >UA</span>
+                <span style=" z-index: 999;  display: none;	font-size: 12px;" id="MINLUZoptionlabel_LG">minutos-luz</span>
+                <span style=" z-index: 999;  display: none;	font-size: 12px;" id="KMoptionlabel_LG">km</span>
+                <span style=" z-index: 999;  display: none;	font-size: 12px;" id="CORRERoptionlabel_LG">a correr</span>
+                <span style=" z-index: 999;  display: none;	font-size: 12px;" id="CAMINHARoptionlabel_LG">a caminhar</span>
+                <a id="clickme" style="cursor: pointer; display: inline;"  onclick="toggle_visibility('selector_LG');"><img style=" display: inline; padding-left: 5px; margin-bottom: 0;padding-bottom: 2px;" src="imagens/setaDown.png" /></a>
+                <div id="selector_LG" onclick="toggle_visibility('selector_LG');">
+                    <div id="toggleButtonUA_LG" style="cursor: pointer; text-align: right; padding-top: 10px;padding-bottom: 10px;" class="language-option" >UA</div>
+                    <div id="toggleButtonMINLUZ_LG" style="cursor: pointer; text-align: right; padding-top: 10px;padding-bottom: 10px;" class="language-option">minutos-luz</div>
+                    <div id="toggleButtonKM_LG" style="cursor: pointer; text-align: right; padding-top: 10px;padding-bottom: 10px;" class="language-option">km</div>
+                    <div id="toggleButtonCORRER_LG" style="cursor: pointer; text-align: right; padding-top: 10px;padding-bottom: 10px;" class="language-option">a correr</div>
+                    <div id="toggleButtonCAMINHAR_LG" style="cursor: pointer; text-align: right; padding-top: 10px;padding-bottom: 10px;" class="language-option">a caminhar</div>
+                </div>
+            </div>
+                            
+
+            <div class="selectoroptionscol_LG" style="display: grid; z-index: 998;" id="measurementOptionsUA_LG">
+                <span style="margin-top: 24px; margin-bottom: 160px" id="measuresolUA_LG">0 UA</span>
+                <span style="margin-bottom: 112px" id="measuremercurioUA_LG">0.4 UA</span>
+                <span style="margin-bottom: 115px" id="measurevenusUA_LG">0.7 UA</span>
+                <span style="margin-bottom: 204px" id="measureterraUA_LG">1 UA</span>
+                <span style="margin-bottom: 562px" id="measuremarteUA_LG">1.5 UA</span>
+                <span style="margin-bottom: 1052px" id="measureceresUA_LG">2.8 UA</span>
+                <span style="margin-bottom: 1941px" id="measurejupiterUA_LG">5.2 UA</span>
+                <span style="margin-bottom: 4262px" id="measuresaturnoUA_LG">9.6 UA</span>
+                <span style="margin-bottom: 4843px" id="measureuranoUA_LG">19.2 UA</span>
+                <span id="measureneptunoUA_LG">30.1 UA</span>
+            </div>
+
+            <div class="selectoroptionscol_LG" style="display: none; z-index: 998;" id="measurementOptionsMINLUZ_LG">
+                <span style="margin-top: 25px; margin-bottom: 140px" id="measuresolMINLUZ_LG">0 minutos <br>luz</span>
+                <span style="margin-bottom: 92px" id="measuremercurioMINLUZ_LG">3.2 minutos <br>luz</span>
+                <span style="margin-bottom: 95px" id="measurevenusMINLUZ_LG">6.0 minutos <br>luz</span>
+                <span style="margin-bottom: 184px" id="measureterraMINLUZ_LG">8.3 minutos <br>luz</span>
+                <span style="margin-bottom: 542px" id="measuremarteMINLUZ_LG">13 minutos <br>luz</span>
+                <span style="margin-bottom: 1032px" id="measureceresMINLUZ_LG">23 minutos <br>luz</span>
+                <span style="margin-bottom: 1923px" id="measurejupiterMINLUZ_LG">43 minutos <br>luz</span>
+                <span style="margin-bottom: 4242px" id="measuresaturnoMINLUZ_LG">80 minutos <br>luz</span>
+                <span style="margin-bottom: 4823px" id="measureuranoMINLUZ_LG">160 minutos <br>luz</span>
+                <span id="measureneptunoMINLUZ_LG">250 minutos <br>luz</span>
+            </div>
+            <div class="selectoroptionscol_LG" style="display: none; z-index: 998;" id="measurementOptionsKM_LG">
+                <span style="margin-top: 24px; margin-bottom: 160px" id="measuresolKM_LG">0 km</span>
+                <span style="margin-bottom: 112px" id="measuremercurioKM_LG">57 910 000 km</span>
+                <span style="margin-bottom: 115px" id="measurevenusKM_LG">101 200 000 km</span>
+                <span style="margin-bottom: 204px" id="measureterraKM_LG">149 600 000 km</span>
+                <span style="margin-bottom: 562px" id="measuremarteKM_LG">227 900 000 km</span>
+                <span style="margin-bottom: 1052px" id="measureceresKM_LG">413 800 000 km</span>
+                <span style="margin-bottom: 1941px" id="measurejupiterKM_LG">778 600 000 km</span>
+                <span style="margin-bottom: 4242px" id="measuresaturnoKM_LG">1 433 000 <br> 000 km</span>
+                <span style="margin-bottom: 4823px" id="measureuranoKM_LG">2 877 000 <br> 000 km</span>
+                <span id="measureneptunoKM_LG">4 503 000 000 km</span>
+            </div>
+
+            <div class="selectoroptionscol_LG" style="display: none; z-index: 998;" id="measurementOptionsCORRER_LG">
+                <span style="margin-top: 24px; margin-bottom: 160px" id="measuresolCORRER">0 segundos</span>
+                <span style="margin-bottom: 112px" id="measuremercurioCORRER">5 segundos</span>
+                <span style="margin-bottom: 115px" id="measurevenusCORRER">15 segundos</span>
+                <span style="margin-bottom: 204px" id="measureterraCORRER">100 segundos</span>
+                <span style="margin-bottom: 562px" id="measuremarteCORRER">2 minutos</span>
+                <span style="margin-bottom: 1052px" id="measureceresCORRER">4 minutos</span>
+                <span style="margin-bottom: 1941px" id="measurejupiterCORRER">8 minutos</span>
+                <span style="margin-bottom: 4262px" id="measuresaturnoCORRER">14 minutos</span>
+                <span style="margin-bottom: 4843px" id="measureuranoCORRER">33 minutos</span>
+                <span id="measureneptunoCORRER">65 minutos</span>
+            </div>
+
+            <div class="selectoroptionscol_LG" style="display: none; z-index: 998;" id="measurementOptionsCAMINHAR_LG">
+                <span style="margin-top: 24px; margin-bottom: 160px" id="measuresolCAMINHAR_LG">0 minutos</span>
+                <span style="margin-bottom: 112px" id="measuremercurioCAMINHAR_LG">1 minuto</span>
+                <span style="margin-bottom: 115px" id="measurevenusCAMINHAR_LG">2 minutos</span>
+                <span style="margin-bottom: 204px" id="measureterraCAMINHAR_LG">3 minutos</span>
+                <span style="margin-bottom: 562px" id="measuremarteCAMINHAR_LG">4 minutos</span>
+                <span style="margin-bottom: 1052px" id="measureceresCAMINHAR_LG">8 minutos</span>
+                <span style="margin-bottom: 1941px" id="measurejupiterCAMINHAR_LG">15 minutos</span>
+                <span style="margin-bottom: 4262px" id="measuresaturnoCAMINHAR_LG">29 minutos</span>
+                <span style="margin-bottom: 4843px" id="measureuranoCAMINHAR_LG">66 minutos</span>
+                <span id="measureneptunoCAMINHAR_LG">2 horas</span>
+            </div>
+
+
+                <div id="tooltipteste">
+                    <div id="tooltip-arrow"></div>
+            <div class="wrapper_MDsmaller" id="wrapper_MDsmaller" style=" width: 42%; display: inline-block;">
+                <span class="tooltiptextsmaller" id="tooltiptextsmaller">
+                <a href="http://sdo.gsfc.nasa.gov/gallery/main/item/151" target="_blank">
+                    <img src="imagens/tooltips/sol.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 90%; margin-bottom: 20px;"/></a>
+                    <div style="line-height: 14px; margin-bottom: 15px;">
+                    <i class="custom-line-height"style="font-size: 10px; width: 30px;">
+                        <small class="custom-small-line-height" id="soldescription_MD" style="margin-bottom: 20px;">Imagem obtida com o instrumento Helioseismic e Magnetic (HMI) concebido para estudar oscilações do campo magnético na superfície solar (fotosfera), num comprimento de onda adequado para ver a formação de manchas solares visíveis. © NASA/SDO and the AIA, EVE, and HMI science teams.</small>
+                    </i>
+                </div>
+                    <p style="margin-bottom: 15px;     font-size: 12px;" id="solinformation_MD">O Sol é a estrela central do Sistema Solar. Todos os outros corpos do Sistema Solar, como planetas, planetas anões, asteroides, cometas e poeira, bem como todos os satélites associados a estes corpos, giram ao seu redor. Responsável por 99,86% da massa do Sistema Solar, o Sol possui uma massa 332 900 vezes maior que a da Terra, um diâmetro 109 vezes superior ao da Terra e um volume 1 300 000 vezes maior que o do nosso planeta.<br>
+                Apesar de todos os outros corpos do Sistema Solar estarem a girar em seu redor, o Sol também gira em redor do centro da nossa galáxia - a Via Láctea. São precisos 225 milhões de anos para que o Sol complete uma órbita e já o fez cerca de 20 vezes desde que se formou há cerca de 4,6 mil milhões de anos.</p>
+                        <p style="margin-bottom:15px;"><small style="font-size: 10px;">GPS: 41.91345, -8.49245 / N 41&deg; 54.807, W 8&deg; 29.547'</small></p></span></div> </div> <div id="sol" onclick=" toggle_visibility1('wrapper_MDsmaller', 'tooltip-arrow' );"><span id="solTT" class="tooltip2" data-tooltip-content="#solTooltip">SOL</span> </div>
+            
+            
+                        <div id="tooltipteste">
+                            <div id="tooltip-arrowmercurio"></div>
+                    <div class="wrappermercurio_MDsmaller" id="wrappermercurio_MDsmaller" style=" width: 42%; display: inline-block;">
+                        <span class="tooltiptextsmaller" id="tooltiptextsmaller">
+                            <a href="http://messenger.jhuapl.edu/Explore/Science-Images-Database/gallery-image-911.html" target="_blank">
+                            <img src="imagens/tooltips/mercurio.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 90%; margin-bottom: 30px;"/></a>
+                            <div style="line-height: 14px; margin-bottom: 15px;">
+                            <i class="custom-line-height"style="font-size: 10px; width: 30px;">
+                                <small class="custom-small-line-height" id="mercuriodescription_MD" style="margin-bottom: 20px;">Mosaico de Mercúrio, na banda do visível e infravermelho próximo, obtido pela sonda Messenger (NASA). © NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington</small>
+                            </i>
+                        </div>
+                            <p style="margin-bottom: 15px;     font-size: 12px;" id="mercurioinformation_MD">Apesar das semelhanças com a Lua, Mercúrio tem um chão muito mais escuro, devido ao pó de grafite que cobre a superfície. Em Mercúrio a grafite existe em percentagens superiores às encontradas na Terra, Marte, ou na Lua.<br>
+                                A explicação mais aceite para a presença deste material aponta para que, há 4,5 mil milhões de anos, quando o planeta era ainda uma bola de magma, a maior parte dos minerais cristalizou e afundou, enquanto a grafite terá flutuado para a superfície.</p>  
+    
+                                <p style="margin-bottom:15px;"><small style="font-size: 10px;">GPS: 41.91289, -8.49269 / N 41° 54.773', W 8° 29.561'</small></p></span></div> </div> <div id="mercurio" onclick=" toggle_visibility1('wrappermercurio_MDsmaller', 'tooltip-arrowmercurio');"><span id="mercurioTT" class="tooltip2" data-tooltip-content="#mercurioTooltip">MERCÚRIO</span> </div>
+                                
+
+
+                                <div id="tooltipteste">
+                                    <div id="tooltip-arrowvenus"></div>
+                            <div class="wrappervenus_MDsmaller" id="wrappervenus_MDsmaller" style=" width: 42%; display: inline-block;">
+                                <span class="tooltiptextsmaller" id="tooltiptextsmaller">
+                                    <a href="https://pt.wikipedia.org/wiki/V%C3%A9nus_(planeta)#/media/File:Venus_globe.jpg" target=_blank>
+                                    <img src="imagens/tooltips/venus.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 90%; margin-bottom: 30px;"/></a>
+                                    <div style="line-height: 14px; margin-bottom: 15px;">
+                                    <i class="custom-line-height"style="font-size: 10px; width: 30px;">
+                                        <small class="custom-small-line-height" id="venusdescription_MD" style="margin-bottom: 20px;">Imagem obtida por radar da superfície de Vénus. © NASA/JPL</small>
+                                    </i>
+                                </div>
+                                    <p style="margin-bottom: 15px;     font-size: 12px;" id="venusinformation_MD">Quando observadas na banda dos ultravioleta, são perfeitamente visíveis as nuvens que cobrem completamente o planeta Vénus, e que impedem a observação direta da superfície deste planeta.<br>
+                                        Só através de observações por radar, como as efetuadas pela sonda Magalhães, foi possível penetrar nessa camada de nuvens, e revelar o terreno. A espessa atmosfera de Vénus é responsável pelo efeito de estufa descontrolado, que o torna no planeta mais quente do Sistema Solar.</p>
+                                        <p style="margin-bottom:15px;"><small style="font-size: 10px;">GPS: 41.91285, -8.49376 / N 41&deg; 54.771', W 8&deg; 29.626'</small></p></span></div> </div>  <div id="venus" onclick=" toggle_visibility1('wrappervenus_MDsmaller','tooltip-arrowvenus');"><span id="venusTT" class="tooltip2" data-tooltip-content="#venusTooltip">VÉNUS</span> </div>
+                                        
+
+                                        <div id="tooltipteste">
+                                            <div id="tooltip-arrowterra"></div>
+                                    <div class="wrapperterra_MDsmaller" id="wrapperterra_MDsmaller" style=" width: 42%; display: inline-block;">
+                                        <span class="tooltiptextsmaller" id="tooltiptextsmaller">
+                                            <a href="https://www.nasa.gov/image-article/africa-europe-from-million-miles-away/" target=_blank>
+                                            <img src="imagens/tooltips/terra.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 90%; margin-bottom: 30px;"/></a>
+                                            <div style="line-height: 14px; margin-bottom: 15px;">
+                                            <i class="custom-line-height"style="font-size: 10px; width: 30px;">
+                                                <small class="custom-small-line-height" id="terradescription_MD" style="margin-bottom: 20px;">Composição de 3 fotos obtidas pelo satélite Deep Space Climate Observatory (DSCOVR), a uma distância de 1,5 milhão de quilómetros da Terra. © NASA</small>
+                                            </i>
+                                        </div>
+                                            <p style="margin-bottom: 15px;     font-size: 12px;" id="terrainformation_MD">A Terra é o único planeta do Sistema Solar com água líquida na sua superfície, água esta que cobre mais de 70% da superfície do nosso planeta.<br>
+                                                No entanto, 97% da água no nosso planeta é água salgada, com apenas 3% de água doce; desta, cerca de 69% (ou pouco mais de 1,7% da totalidade da água do planeta) está sob a forma de gelo, nas calotas polares e nos glaciares, enquanto 30% está no subsolo.</p>
+                                                <p style="margin-bottom:15px;"><small style="font-size: 10px;">GPS: 41.91262, -8.49423 / N 41° 54.757', W 8° 29.654'</small></p>
+                                            
+                                            
+                                                <a href="http://www.nasa.gov/feature/goddard/rare-full-moon-on-christmas-day" target=_blank>
+                                                    <img src="imagens/tooltips/lua.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 90%; margin-bottom: 30px;"/></a>
+                                                    <div style="line-height: 14px; margin-bottom: 15px;">
+                                                    <i class="custom-line-height"style="font-size: 10px; width: 30px;">
+                                                        <small class="custom-small-line-height" id="luadescription_MD" style="margin-bottom: 20px;">Esta imagem, com base em dados da sonda LRO da NASA, mostra a face da Lua como a vemos da Terra. © NASA/GSFC/Universidade Estatal do Arizona</small>
+                                                    </i>
+                                                </div>
+                                                    <p style="margin-bottom: 15px;     font-size: 12px;" id="luainformation_MD">A Lua, o nosso satélite natural, foi até agora o único corpo celeste alguma vez visitado por seres humanos. Visto da Terra apresenta manchas escuras, conhecidas por Mares, que durante milénios a humanidade julgou estarem cheios de água líquida. Na realidade, são zonas compostas por basaltos, que se formaram por arrefecimento rápido de lava.<br>
+                                                        Os Mares são exclusivos do lado visível, não existindo no lado oculto da Lua.</p>
+                                                        <p style="margin-bottom:15px;"><small style="font-size: 10px;">GPS: 41.91262, -8.49423 / N 41° 54.757', W 8° 29.654'</small></p>
+                                            </span>
+                                            </div>  
+                                        </div> 
+                                            <div id="terra" onclick=" toggle_visibility1('wrapperterra_MDsmaller','tooltip-arrowterra');"><span id="terraTT" class="tooltip2" data-tooltip-content="#terraTooltip" >TERRA E</span><br>
+                                                <span id="luaTT" class="tooltip2" data-tooltip-content="#luaTooltip">LUA</span></div>
+                                                
+
+
+                                                <div id="tooltipteste">
+                                                    <div id="tooltip-arrowmarte"></div>
+                                            <div class="wrappermarte_MDsmaller" id="wrappermarte_MDsmaller" style=" width: 42%; display: inline-block;">
+                                                <span class="tooltiptextsmaller" id="tooltiptextsmaller">
+                                                    <a href="http://mars.nasa.gov/multimedia/images/?ImageID=6453" target=_blank>
+                                                    <img src="imagens/tooltips/marte.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 90%; margin-bottom: 30px;"/></a>
+                                                    <div style="line-height: 14px; margin-bottom: 15px;">
+                                                    <i class="custom-line-height"style="font-size: 10px; width: 30px;">
+                                                        <small class="custom-small-line-height" id="martedescription_MD" style="margin-bottom: 20px;">Mosaico de 102 imagens de Marte, obtidas pela sonda Viking Orbiter, a cerca de 2500 quilómetros do planeta. © NASA/JPL-Caltech</small>
+                                                    </i>
+                                                </div>
+                                                    <p style="margin-bottom: 15px;     font-size: 12px;" id="marteinformation_MD">O planeta Marte é o lar de algumas das maiores estruturas geológicas do Sistema Solar. O Vale dos Marinheiros (Valles Marineris) é um desfiladeiro com cerca de 3000 quilómetros de extensão, tem zonas que chegam aos 9 quilómetros de profundidade, e margens que estão a 100 quilómetros uma da outra.<br>
+                                                        Também a maior montanha vulcânica do Sistema Solar fica em Marte – O Monte Olimpo, com 3 vezes a altitude do Everest, e uma área da base semelhante a toda a Península Ibérica.</p>
+                                                        <p style="margin-bottom:15px;"><small style="font-size: 10px;">GPS: 41.91214, -8.49513 / N 41° 54.728', W 8° 29.708'</small></p></span></div> </div>  <div id="marte" onclick=" toggle_visibility1('wrappermarte_MDsmaller', 'tooltip-arrowmarte');"><span id="marteTT" class="tooltip2" data-tooltip-content="#marteTooltip" >MARTE</span> </div>
+                                                        
+
+
+
+                                                        <div id="tooltipteste">
+                                                            <div id="tooltip-arrowceres"></div>
+                                                    <div class="wrapperceres_MDsmaller" id="wrapperceres_MDsmaller" style=" width: 42%; display: inline-block;">
+                                                        <span class="tooltiptextsmaller" id="tooltiptextsmaller">
+                                                            <a href="http://www.planetary.org/multimedia/space-images/small-bodies/color-global-view-of-ceres-haulani.html" target=_blank>
+                                                            <img src="imagens/tooltips/ceres.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 90%; margin-bottom: 30px;"/></a>
+                                                            <div style="line-height: 14px; margin-bottom: 15px;">
+                                                            <i class="custom-line-height"style="font-size: 10px; width: 30px;">
+                                                                <small class="custom-small-line-height" id="ceresdescription_MD" style="margin-bottom: 20px;">Imagem em cores naturais de Ceres obtida em maio de 2015, pela sonda Dawn. © National Aeronautics and Space Administration (NASA) / Jet Propulsion Laboratory (JPL) / California Institute of Technology e Justin Cowart, The Planetary Society</small>
+                                                            </i>
+                                                        </div>
+                                                            <p style="margin-bottom: 15px;     font-size: 12px;" id="ceresinformation_MD">Ceres é um planeta anão que se encontra na cintura de asteroides, entre Marte e Júpiter. Foi descoberto dia 1 de Janeiro de 1801 por Giuseppe Piazzi, no entanto já tinha sido previsto por Johann Bode em 1772.<br>
+                                                                A sua atmosfera é muito ténue, formada principalmente por vapor de água que sublima e deixa a superfície. É constituído essencialmente por rocha e gelo e possui muitas crateras de baixo-relevo na sua superfície. Ceres foi o primeiro objeto a ser considerado um asteroide. Em 2006 juntamente com Plutão integrou a categoria de planeta anão, sendo o mais pequeno deles todos.</p>
+                                                                <p style="margin-bottom:15px;"><small style="font-size: 10px;">GPS: 41.91041, -8.4968 / N 41° 54.625', W 8° 29.808'</small></p></span></div> </div>  <div id="ceres" onclick=" toggle_visibility1('wrapperceres_MDsmaller', 'tooltip-arrowceres');"><span id="ceresTT" class="tooltip2" data-tooltip-content="#ceresTooltip" >CERES</span> </div>
+                                                                
+
+                                                                <div id="tooltipteste">
+                                                                    <div id="tooltip-arrowjupiter"></div>
+                                                            <div class="wrapperjupiter_MDsmaller" id="wrapperjupiter_MDsmaller" style=" width: 42%; display: inline-block;">
+                                                                <span class="tooltiptextsmaller" id="tooltiptextsmaller">
+                                                                    <a href="http://www.spacetelescope.org/images/heic1410a/" target=_blank>
+                                                                    <img src="imagens/tooltips/jupiter.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 90%; margin-bottom: 30px;"/></a>
+                                                                    <div style="line-height: 14px; margin-bottom: 15px;">
+                                                                    <i class="custom-line-height"style="font-size: 10px; width: 30px;">
+                                                                        <small class="custom-small-line-height" id="jupiterdescription_MD" style="margin-bottom: 20px;">Imagem de Júpiter obtida pelo Telescópio Espacial Hubble a 21 de abril de 2014, com a Wide Field Camera 3. © NASA, ESA, e A. Simon (GSFC)</small>
+                                                                    </i>
+                                                                </div>
+                                                                    <p style="margin-bottom: 15px;     font-size: 12px;" id="jupiterinformation_MD">Júpiter é o maior planeta do Sistema Solar, com 11 vezes o diâmetro da Terra. Assim, em volume, caberiam dentro de Júpiter cerca de 1330 Terras.<br>
+                                                                        Este planeta é um gigante gasoso, com tempestades que ultrapassam os 500 km/h. Uma das características mais reconhecidas deste planeta é a Grande Mancha Vermelha, um anticiclone com mais de 300 anos. Tem mais de 75 luas conhecidas, tendo as quatro maiores sido descobertas por Galileu Galilei em 1609.</p>
+                                                                        <p style="margin-bottom:15px;"><small style="font-size: 10px;">GPS: 41.90679, -8.49919 / N 41° 54.407', W 8° 29.951'</small></p></span></div> </div>  <div id="jupiter" onclick=" toggle_visibility1('wrapperjupiter_MDsmaller', 'tooltip-arrowjupiter');"><span id="jupiterTT" class="tooltip2" data-tooltip-content="#jupiterTooltip">JÚPITER</span> </div>
+                                                                        
+        
+
+                                                                        <div id="tooltipteste">
+                                                                            <div id="tooltip-arrowsaturno"></div>
+                                                                    <div class="wrappersaturno_MDsmaller" id="wrappersaturno_MDsmaller" style=" width: 42%; display: inline-block;">
+                                                                        <span class="tooltiptextsmaller" id="tooltiptextsmaller">
+                                                                            <a href="https://ciclops.org/view/5155/Saturn-Four-Years-On.html" target=_blank>
+                                                                            <img src="imagens/tooltips/saturno.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 90%; margin-bottom: 30px;"/></a>
+                                                                            <div style="line-height: 14px; margin-bottom: 15px;">
+                                                                            <i class="custom-line-height"style="font-size: 10px; width: 30px;">
+                                                                                <small class="custom-small-line-height" id="saturnodescription_MD" style="margin-bottom: 20px;">Mosaico de 30 imagens de Saturno, obtidas pela sonda Cassini (NASA). © NASA/JPL/Space Science Institute</small>
+                                                                            </i>
+                                                                        </div>
+                                                                            <p style="margin-bottom: 15px;     font-size: 12px;" id="saturnoinformation_MD">Saturno é famoso devido aos seus anéis, mas estes não são, como aparentam à primeira vista, anéis perfeitos. Na realidade são milhões de blocos de gelo, que podem medir entre alguns centímetros e vários quilómetros. Como o gelo reflete muito bem a luz do sol, para os ver da Terra, basta um instrumento que aumente cerca de 30 vezes a imagem. Tem mais de 80 luas conhecidas.<br>
+                                                                                Este planeta é também muito pouco denso – se fosse possível colocar Saturno num recipiente com água, este iria flutuar.</p>
+                                                                                <p style="margin-bottom:15px;"><small style="font-size: 10px;">GPS: 41.89933, -8.50151 / N 41° 53.960', W 8° 30.091'</small></p></span></div> </div>  <div id="saturno" onclick=" toggle_visibility1('wrappersaturno_MDsmaller', 'tooltip-arrowsaturno');"><span id="saturnoTT" class="tooltip2" data-tooltip-content="#saturnoTooltip" >SATURNO</span> </div>
+                                                                                
+                
+
+                                                                                <div id="tooltipteste">
+                                                                                    <div id="tooltip-arrowurano"></div>
+                                                                            <div class="wrapperurano_MDsmaller" id="wrapperurano_MDsmaller" style=" width: 42%; display: inline-block;">
+                                                                                <span class="tooltiptextsmaller" id="tooltiptextsmaller">
+                                                                                    <a href="http://photojournal.jpl.nasa.gov/catalog/PIA17306" target=_blank>
+                                                                                    <img src="imagens/tooltips/urano.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 90%; margin-bottom: 30px;"/></a>
+                                                                                    <div style="line-height: 14px; margin-bottom: 15px;">
+                                                                                    <i class="custom-line-height"style="font-size: 10px; width: 30px;">
+                                                                                        <small class="custom-small-line-height" id="uranodescription_MD" style="margin-bottom: 20px;">Composição de imagens na banda do infravermelho do planeta Urano. © Lawrence Sromovsky, University of Wisconsin-Madison/W.M. Keck Observatory</small>
+                                                                                    </i>
+                                                                                </div>
+                                                                                    <p style="margin-bottom: 15px;     font-size: 12px;" id="uranoinformation_MD">À semelhança dos gigantes gasosos, também os gigantes gelados têm anéis, tempestades violentas e furacões, que no caso de Urano, excedem os 1000 km/h. Os gigantes gelados têm uma atmosfera superior de hidrogénio, semelhante aos gigantes gasosos, mas o seu interior será um "manto" gelado.<br>
+                                                                                        A cor de Urano é devida ao terceiro componente mais abundante na sua atmosfera, o gelo de Metano.</p>
+                                                                                        <p style="margin-bottom:15px;"><small style="font-size: 10px;">GPS: 41.88403, -8.50559 / N 41° 53.042', W 8° 30.335'</small></p></span></div> </div>  <div id="urano" onclick=" toggle_visibility1('wrapperurano_MDsmaller', 'tooltip-arrowurano');"><span id="uranoTT" class="tooltip2" data-tooltip-content="#uranoTooltip" >URANO</span> </div>
+                                                                                        
+
+
+
+                                                                                        <div id="tooltipteste">
+                                                                                            <div id="tooltip-arrowneptuno"></div>
+                                                                                    <div class="wrapperneptuno_MDsmaller" id="wrapperneptuno_MDsmaller" style=" width: 42%; display: inline-block;">
+                                                                                        <span class="tooltiptextsmaller" id="tooltiptextsmaller">
+                                                                                            <a href="http://photojournal.jpl.nasa.gov/catalog/PIA01492" target=_blank>
+                                                                                            <img src="imagens/tooltips/neptuno.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 90%; margin-bottom: 30px;"/></a>
+                                                                                            <div style="line-height: 14px; margin-bottom: 15px;">
+                                                                                            <i class="custom-line-height"style="font-size: 10px; width: 30px;">
+                                                                                                <small class="custom-small-line-height" id="neptunodescription_MD" style="margin-bottom: 20px;">Imagem de Neptuno obtida pela sonda Voyager 2, a mais de 7 milhões de km de distância. © NASA/JPL</small>
+                                                                                            </i>
+                                                                                        </div>
+                                                                                            <p style="margin-bottom: 15px;     font-size: 12px;" id="neptunoinformation_MD">Neptuno foi o único planeta do Sistema Solar cuja existência foi prevista através de cálculos matemáticos, por Urbain Le Verrier, que guiaram o alemão Johann Gottfried Galle à sua descoberta, em 1846.<br>
+                                                                                                Apesar de ser mais pequeno que Urano, é mais massivo (e portanto mais denso) que o outro gigante gelado do Sistema Solar. É também em Neptuno que encontramos as mais violentas tempestades do Sistema Solar, com ventos que ultrapassam os 2000 km/h.</p>
+                                                                                                <p style="margin-bottom:15px;"><small style="font-size: 10px;">GPS: 41.86745, -8.51819 / N 41° 52.047', W 8° 31.091'</small></p></span></div> </div>  <div id="neptuno" onclick=" toggle_visibility1('wrapperneptuno_MDsmaller', 'tooltip-arrowneptuno');"><span id="neptunoTT" class="tooltip2" data-tooltip-content="#neptunoTooltip" >NEPTUNO</span> </div>
+                                                                                                
+        </div>
+    </div>
+    
+
+
+
+    <script src="languages.js"></script>
+    <script type="text/javascript">
+    
+
+// função que garante que o label no menu das medidas aparece de acordo com a seleção do utilizador e com a tradução correta
+    function toggleMeasurementOptions(option) {
+    const allOptionDivs = ['measurementOptionsUA_LG', 'measurementOptionsMINLUZ_LG', 'measurementOptionsKM_LG', 'measurementOptionsCORRER_LG', 'measurementOptionsCAMINHAR_LG'];
+    const allLabels = ['UAoptionlabel_LG', 'MINLUZoptionlabel_LG', 'KMoptionlabel_LG', 'CORRERoptionlabel_LG', 'CAMINHARoptionlabel_LG'];
+    allOptionDivs.forEach(function (id) {
+        document.getElementById(id).style.display = 'none';
+    });
+
+    allLabels.forEach(function (id) {
+        document.getElementById(id).style.display = 'none';
+    });
+
+    const optionDiv = document.getElementById(option.div);
+    const optionLabel = document.getElementById(option.label);
+
+    if (optionDiv.style.display === 'none' || optionDiv.style.display === '') {
+        optionDiv.style.display = 'grid';  
+        optionLabel.style.display = 'inline';  
+    } else {
+        optionDiv.style.display = 'none';  
+        optionLabel.style.display = 'none';  
+    }
+}
+
+// Criação dos eventos para a função toggleMeasurementOptions
+document.getElementById('toggleButtonUA_LG').addEventListener('click', function() {
+    toggleMeasurementOptions({ div: 'measurementOptionsUA_LG', label: 'UAoptionlabel_LG' });
+});
+
+document.getElementById('toggleButtonMINLUZ_LG').addEventListener('click', function() {
+    toggleMeasurementOptions({ div: 'measurementOptionsMINLUZ_LG', label: 'MINLUZoptionlabel_LG' });
+});
+
+document.getElementById('toggleButtonKM_LG').addEventListener('click', function() {
+    toggleMeasurementOptions({ div: 'measurementOptionsKM_LG', label: 'KMoptionlabel_LG' });
+});
+
+document.getElementById('toggleButtonCORRER_LG').addEventListener('click', function() {
+    toggleMeasurementOptions({ div: 'measurementOptionsCORRER_LG', label: 'CORRERoptionlabel_LG' });
+});
+
+document.getElementById('toggleButtonCAMINHAR_LG').addEventListener('click', function() {
+    toggleMeasurementOptions({ div: 'measurementOptionsCAMINHAR_LG', label: 'CAMINHARoptionlabel_LG' });
+});
+
+
+// Função que permite a troca do idioma apartir do menu
+
+function switchLang(option) {
+  if (!languageContent[option]) {
+    console.error("Invalid language:", option);
+    return;
+  }
+
+  localStorage.setItem("preferredLanguage", option);  
+
+  for (let key in languageContent[option]) {
+    const element = document.getElementById(key);
+    if (element) {
+      element.innerHTML = languageContent[option][key];
+    }
+  }
+
+  console.log("Language switched to", option);  
+}
+
+// Default language definida para Português
+document.addEventListener("DOMContentLoaded", function() {
+        const savedLang = localStorage.getItem("preferredLanguage") || "pt"; 
+        switchLang(savedLang);
+    });
+
+</script>
+
+
+
+</body>
+</html>

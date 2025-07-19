@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google" content="nositelinkssearchbox">
+<meta name="google" content="nopagereadaloud">
+<meta name="google" content="nositelinkssearchbox">
+<meta name="googlebot" content="noindex, noarchive, nosnippet">
+    <link rel="stylesheet" type="text/css" href="style2responsivo.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    
+    <!-- Fancybox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet"> 
+    <link href=https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet"> 
+<title>Trilho do Sistema Solar</title>
+
+<script>
+
+// cria as definições da Fancybox
+$(document).ready(function() {
+  $('[data-fancybox]').fancybox({
+    // Fancybox toolbar
+    buttons: ['zoom', 'close'],
+    
+    // Animações da Fancybox
+    transitionEffect: 'fade',      
+    animationEffect: 'fade',       
+    openSpeed: 1000,               
+    closeSpeed: 1000,              
+    animationDuration: 300,        
+    transitionDuration: 300,       
+    
+    hideScrollbar: false,
+    zoom: false,                  
+    
+    
+    caption: function(instance, item) {
+      return $(this).attr('title'); 
+    },
+    
+    
+  });
+});
+
+
+</script>
+
+<style>
+
+.fancybox-image {
+      height: auto !important; 
+      padding-left: auto;
+      padding-right: auto;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      transform: scale(0.9);
+
+    }
+
+
+
+    .fancybox-container {
+        position: fixed !important;  
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      padding: 0 !important;
+      padding-left: auto;
+      padding-right: auto;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      transition: opacity 0.1s ease-out; 
+      z-index: 9999;
+      
+
+    }
+
+    
+    .fancybox-is-closing .fancybox-container {
+        opacity: 0;  
+    }
+
+
+
+
+.fancybox-toolbar {
+  display: flex !important; 
+  justify-content: flex-start; 
+  gap: 10px; 
+  margin-top: 2%;
+  margin-right: 2%;
+}
+.fancybox-button--zoom {
+	background-color: transparent; 
+	color: white;
+	border-radius: 50%;
+	padding: 12px;
+	font-size: 24px !important; 
+	border: 2px solid white;
+  }
+  
+  .fancybox-button--zoom:hover {
+	background-color: #1976D2; 
+  }
+
+  .fancybox-button--close svg {
+  transform: scale(1.5) !important; 
+  fill: #f44336 !important; 
+}
+
+.fancybox-button--zoom svg {
+  transform: scale(1.5) !important; 
+  fill: #1976D2 !important; 
+}
+  
+
+  .fancybox-button--close {
+    font-family: "fancybox-icons" !important;
+	background-color: transparent; 
+	color: white; 
+	border-radius: 50%;
+	padding: 12px;
+	font-size: 24px !important; 
+	border: 2px solid white; 
+
+  }
+  
+  .fancybox-button--close:hover {
+	background-color: #f44336; 
+	color: white;   }
+
+    .fancybox-button--close:hover {
+      background-color: #f44336 !important; 
+      color: white !important; 
+      font-size: 24px !important; 
+    }
+  
+
+
+</style>
+</head>
+
+<!-- Pag FichaTecnica -->
+<body style="background-color: #12152d;">
+
+
+
+<!-- PageInfo -->
+
+<section id="sectioninfo">
+<div class="container-fluid" id="topinfo" >
+    <div class="row rowtop">
+
+
+<!-- Caminho para Index -->
+
+        <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2 col-xxl-1">
+            <img style="float: right;"  src="imagens/menuVbar.png" />
+
+            <span id="sectionTitle"><a style="	font-family: inherit;
+                font-size: inherit;
+                margin-right: 20px; text-decoration: none; float: left;" id="nameinfo"  href="index.html">Trilho do<br> Sistema<br> Solar</a></span>
+        </div>
+
+
+<!-- Nome Pag -->
+
+        <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2 col-xxl-1">
+                <span id="sectionTitleinfo"><p style="transform: translateY(-13px);; cursor: default;">Informação do Trilho</p></span>
+        </div>
+
+
+<!-- Menu dos Idiomas -->
+
+        <div class="col-2 col-sm-3 col-md-1 col-lg-1 col-xl-1">
+            <img  src="imagens/menuVbar.png" />
+
+            <span id="sectionTitle2"><div class="lanmenu2" style="padding-top: 6px;">
+
+                    <div style="width: 60px">
+                        <span style="margin-left: 2%;"   class="sectionTitle" id="languageinfo">PT</span>
+                                <a id="clickme" style="cursor: pointer;"  onclick="toggle_visibility('hamMenulang2');"><img style="padding-left: 12%;" src="imagens/setaDown_off.png" id="seta2" /></a>
+                                <div id="hamMenulang2">
+                                    <ul>
+                                        <li class="hamMenulangTop2"><button class="btn" onclick = "switchLang('ca'); toggle_visibility('hamMenulang2')"> Català </button></li>
+                                        <li class="hamMenulangTop2"><button class="btn" onclick = "switchLang('de'); toggle_visibility('hamMenulang2')"> Deutsch </button></li>
+                                        <li class="hamMenulangTop2"><button class="btn" onclick = "switchLang('en'); toggle_visibility('hamMenulang2')"> English </button></li>
+                                        <li class="hamMenulangTop2" ><button class="btn" onclick = "switchLang('es'); toggle_visibility('hamMenulang2')"> Castellano </button></li>
+                                        <li class="hamMenulangTop2"><button class="btn" onclick = "switchLang('fr'); toggle_visibility('hamMenulang2')"> Français </button></li>
+                                        <li class="hamMenulangTop2" ><button class="btn" onclick = "switchLang('hr'); toggle_visibility('hamMenulang2')"> Hrvatski </button></li>
+                                        <li class="hamMenulangTop2"><button class="btn" onclick = "switchLang('it'); toggle_visibility('hamMenulang2')"> Italian </button></li>
+                                        <li class="hamMenulangTop2"><button class="btn" onclick = "switchLang('hu'); toggle_visibility('hamMenulang2')"> Magyar </button></li>
+                                        <li class="hamMenulangTop2"><button class="btn" onclick = "switchLang('pt'); toggle_visibility('hamMenulang2')"> Português </button></li>
+                                        <li class="hamMenulangTop2"><button class="btn" onclick = "switchLang('sv'); toggle_visibility('hamMenulang2')"> Svenska </button></li>
+                                        <li class="hamMenulangTop2"><button class="btn" onclick = "switchLang('el'); toggle_visibility('hamMenulang2')"> ελληνικά </button></li>
+ 
+                                    </ul>
+                                    <hr noshade="noshade" />
+
+                                 </div>
+                                </div>
+                              </div></span>
+        </div>
+
+
+
+<!-- Links do TopMenu -->
+
+        <!-- Links do TopMenu (ecras xs xl xxl)-->
+            <div class="col-8 d-none d-lg-none d-xl-block col-xl-6 col-xxl-8">
+            <div id="linksDireita">
+                <ul><li id="astrocamptoplink"><a href="https://astrocamp.astro.up.pt/pt/index.html" style="max-width: 10px;" target="_blank">ASTRO<br />CAMP</a></li>
+                <li><a class="linkdireitacentro" href="https://www.paredesdecoura.pt/locais/centro-de-educacao-e-interpretacao-ambiental/" style="max-width: 10px;" target="_blank"><em class="linkdireitacentro">CEIA</em></a></li>
+                <li><a href="https://www.paredesdecoura.pt/" style="max-width: 10px;" target="_blank" id="municipioinfo">MUNICÍPIO<br />PAREDES DE COURA</a></li>
+                </div>
+
+            </div>
+
+        <!-- Links do TopMenu (ecras md lg)-->
+            <div class="d-none d-md-block col-md-6 col-lg-6 d-xl-none">
+                <div id="linksDireita1">
+                    <ul><li id="astrocamptoplink1"><a href="https://astrocamp.astro.up.pt/pt/index.html" style="max-width: 10px;" target="_blank">ASTRO<br />CAMP</a></li>
+                    <li><a class="linkdireitacentro" href="https://www.paredesdecoura.pt/locais/centro-de-educacao-e-interpretacao-ambiental/" style="max-width: 10px;" target="_blank"><em class="linkdireitacentro1">CEIA</em></a></li>
+                    <li><a href="https://www.paredesdecoura.pt/" style="max-width: 10px;" target="_blank" id="municipioinfoMD">MUNICÍPIO<br />PAREDES DE COURA</a></li>
+                    </div>
+
+                </div>
+
+
+<!-- Menu Hamburguer -->
+
+            <div class="col-2 col-sm-3 col-md-1 col-lg-1 col-xl-1">
+             
+                <div id="hamburguer">
+                    <a href="#" onclick="event.preventDefault(); toggle_visibility('hamMenuinfo');"><img src="imagens/menuButton.png" /></a>
+                    <div id="hamMenucontainer" onmouseleave="toggle_visibility('hamMenuinfo');"><div id="hamMenuinfo">
+                        <ul>
+                            <li class="hamMenuTop"><a href="index.html" id="menutrilhonameinfo" >TRILHO DO SISTEMA SOLAR</a></li>
+                            <li class="hamMenuTop"><a  href="#" id="menuinfonameinfo">INFORMAÇÃO DO TRILHO</a></li>
+                            <li class="hamMenuTop"><a  href="FichaTecnica.html" id="menufichanameinfo">FICHA TÉCNICA </a></li>
+                        </ul>
+                        <hr noshade="noshade" />
+                           <ul>
+                             <li class="hamMenuBottom" id="astrocamptoplinkbottom"><a href="https://astrocamp.astro.up.pt/pt/" target="_blank">ASTROCAMP</a></li>
+                           <li class="hamMenuBottom"><a href="https://www.paredesdecoura.pt/locais/centro-de-educacao-e-interpretacao-ambiental/" target="_blank">CEIA</a></li>
+                           <li class="hamMenuBottom"><a href="https://www.paredesdecoura.pt/" target="_blank" id="municipiomenu">MUNICÍPIO PAREDES DE COURA</a></li>
+                        </ul>
+                     </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+<!-- Fim TopMenu -->
+
+</div>   
+    </div>
+
+
+<!-- Começo Conteudo -->
+
+<div class="container-fluid" id="continfo">
+    
+    <div class="content">
+        <div class="row" style="width: inherit">
+
+
+<!-- Coluna de espaço ESQ (ecras sm e xs)-->
+
+<div class="d-sm-block d-md-none d-xl-none col-1 col-sm-1"></div>
+
+
+<!-- Coluna de conteudo 1 (ecras sm e xs)-->
+
+<div class=" d-sm-block d-md-none d-lg-none d-xl-none col-8 col-sm-8">
+<div id ="divcontentleftinfo_SMXS" class="contentLeft">
+        <p>O projecto do Trilho do Sistema Solar, foi criado no âmbito das atividades do campo de férias científico <a href="https://astrocamp.astro.up.pt/pt/index.html" target="_blank">AstroCamp</a> que tem decorrido nos últimos anos no <a href="http://www.cornodebico.pt/" target="_blank">CEIA &ndash; Centro de Educação e Interpretação Ambiental do Corno de Bico</a>, em Paredes de Coura.<br />
+Coordenado pelo astrofísico <a href="http://astro.up.pt/caup/index.php?WID=114&CID=1&ID=50&Lang=pt" target="_blank">Carlos Martins</a>, o AstroCamp contou já com a colaboração de cerca de 20 outros investigadores
+(Portugueses e estrangeiros) da área da astronomia e física, proporcionando a estudantes do ensino secundário de países da União Europeia formação inspiradora e de alta qualidade, repouso e lazer num ambiente isolado e tranquilo, longe do stress dos centros urbanos.</p>
+    </div>
+</div>
+
+
+<!-- Coluna de espaço DRT e ESQ2 (ecras xs sm)-->
+
+<div class="d-sm-block d-md-none d-lg-none d-xl-none col-3 col-sm-3"></div>
+
+</div>
+
+<div class="row" style="width: inherit">
+
+<div class="d-sm-block d-md-none d-lg-none d-xl-none col-1 col-sm-1"></div>
+
+
+<!-- Coluna de conteudo 2 (ecras sm e xs)-->
+
+    <div class="d-sm-block d-md-none d-lg-none d-xl-none col-8 col-sm-8">
+        <div id="divcontentrightinfo_SMXS" class="contentRightinfo">
+                <p>Numa segunda fase o <a href="http://www.cornodebico.pt/" target="_blank">CEIA &ndash; Centro de Educação e Interpretação Ambiental do Corno de Bico</a> e o <a href="https://www.paredesdecoura.pt/" target="_blank">Município de Paredes de Coura</a> lançaram à coordenação do AstroCamp o desafio de implementar uma versão mais apelativa e funcional do trilho. O <a href="http://astro.up.pt/" target="_blank">Centro de Astrofísica da Universidade do Porto</a> através do <a href="http://www.iastro.pt/" target="_blank">Instituto de Astrofísica e Ciências do Espaço</a> e o <a href="http://planetario.up.pt/" target="_blank">Planetário do Porto &ndash; Centro Ciência Viva</a> assumiram o projecto, transformando o trilho de modo a integrar comunicação e visualização de informação associada ao Sistema Solar.<br />
+Nesta fase o trilho foi ainda homologado pela agência <a href="http://www.cienciaviva.pt/" target="_blank">Ciência Viva</a> e virá a integrar Rede Municipal de Percursos Pedestres de Paredes de Coura como PR17.</p>
+            </div>
+    </div>
+
+
+<!-- Coluna de espaço DRT2 (ecras xs sm)-->
+    <div class="d-sm-block d-md-none d-lg-none d-xl-none col-3 col-sm-3"></div>
+
+
+</div>
+
+<div class="row" style="width: inherit">
+
+    <div class="d-sm-block d-md-none d-lg-none d-xl-none col-1 col-sm-1"></div>
+<!-- Mapa (ecras sm) -->
+<div class="d-none d-sm-block col-10 col-sm-10 d-md-none d-lg-none d-xl-none" style="text-align:center; margin-bottom: 20px;">
+    <iframe src="https://www.google.com/maps/d/embed?mid=13HUCC7RJb1ajHoAXkm5w0fM3e-4" width="90%" height="500"></iframe>
+    <p style="margin-left: 5%; margin-top: 1%;"><strong id="iniciodotrilho_SM">Início do Trilho do Sistema Solar no CEIA</strong><br />
+GPS: 41.9133292, -8.4926981 | N 41 54.800, W 8 29.562</p>
+            </div>
+
+
+            <!-- Mapa (ecras xs) -->
+<div class="col-10 d-sm-none d-md-none d-lg-none d-xl-none" style="text-align:center; margin-bottom: 10px;">
+    <iframe src="https://www.google.com/maps/d/embed?mid=13HUCC7RJb1ajHoAXkm5w0fM3e-4" width="90%" height="500"></iframe>
+    <p style="margin-left: 5%; margin-top: 1%;" id="iniciodotrilhosmall"><strong id="iniciodotrilho_XS">Início do Trilho do Sistema Solar no CEIA</strong><br />
+GPS: 41.9133292, -8.4926981 <br>| N 41 54.800, W 8 29.562</p>
+            </div>
+
+            <div class="d-sm-block d-md-none d-lg-none d-xl-none col-1 col-sm-1"></div>
+
+</div>
+
+<div class="row" style="width: inherit">
+    
+    <div class="d-sm-block d-md-none d-lg-none d-xl-none col-1 col-sm-1"></div>
+    <!-- altimetria (ecras xs) -->
+    
+    <div class="d-sm-none d-md-none d-lg-none d-xl-none col-10" style="text-align:center; margin-left: auto; margin-right: auto; padding-top: 2%; margin-bottom: 10px;">
+    <div style=" text-align: center; margin-left: auto; margin-right: auto;"><p style=" margin-left: 5%"><strong id="percurso_XS">Perfil de altimetria do percurso</strong><br />
+    <a class="altimetriaLink fancybox" href="imagens/altimetria_full.png"  data-fancybox data-caption="" style="cursor: zoom-in;"><div class="image-container"><img src="imagens/altimetria.png" class="altimetriaImage" id="altimetriaImage" style="width:90%; height:400;"></div></a>
+    </div>
+    </div><!-- altimetria (ecras sm) -->
+
+    <div class="d-none d-sm-block d-md-none d-lg-none d-xl-none col-sm-10" style="text-align:center; margin-left: auto; margin-right: auto; padding-top: 2%; margin-bottom: 20px;">
+    <div style=" text-align: center; margin-left: auto; margin-right: auto;"><p style=" margin-left: 5%"><strong id="percurso_SM">Perfil de altimetria do percurso</strong><br />
+    <a class="altimetriaLink fancybox" href="imagens/altimetria_full.png"  data-fancybox data-caption="" style="cursor: zoom-in;"><div class="image-container"><img src="imagens/altimetria.png" class="altimetriaImage" id="altimetriaImage" style="width:90%; height:400;"></div></a>
+    </div>
+    </div>
+    <div class="d-sm-block d-md-none d-lg-none d-xl-none col-1 col-sm-1"></div>
+
+</div>
+    
+<div class="row" style="width: inherit">
+
+<!-- Coluna de espaço ESQ (ecras md lg xl)-->
+
+<div class="d-none d-md-block d-lg-block d-xl-block col-md-1 col-lg-1 col-xl-2"></div>
+
+
+<!-- Coluna de conteudo 1 (ecras md xl)-->
+
+    <div class="d-none d-md-block d-lg-none d-xl-block col-md-5 col-xl-4">
+<div id = "divcontentleftinfo_MDXL" class="contentLeft">
+            <p>O projecto do Trilho do Sistema Solar, foi criado no âmbito das atividades do campo de férias científico <a href="https://astrocamp.astro.up.pt/pt/index.html" target="_blank">AstroCamp</a> que tem decorrido nos últimos anos no <a href="http://www.cornodebico.pt/" target="_blank">CEIA &ndash; Centro de Educação e Interpretação Ambiental do Corno de Bico</a>, em Paredes de Coura.<br />
+Coordenado pelo astrofísico <a href="http://astro.up.pt/caup/index.php?WID=114&CID=1&ID=50&Lang=pt" target="_blank">Carlos Martins</a>, o AstroCamp contou já com a colaboração de cerca de 20 outros investigadores
+(Portugueses e estrangeiros) da área da astronomia e física, proporcionando a estudantes do ensino secundário de países da União Europeia formação inspiradora e de alta qualidade, repouso e lazer num ambiente isolado e tranquilo, longe do stress dos centros urbanos.</p>
+        </div>
+    </div>
+
+
+<!-- Coluna de conteudo 2 (ecras md xl)-->
+
+        <div class="d-none d-md-block d-lg-none d-xl-block col-md-5 col-xl-4">
+            <div id="divcontentrightinfo_MDXL" class="contentRightinfo" style="padding-right: 3%;">
+                    <p>Numa segunda fase o <a href="http://www.cornodebico.pt/" target="_blank">CEIA &ndash; Centro de Educação e Interpretação Ambiental do Corno de Bico</a> e o <a href="https://www.paredesdecoura.pt/" target="_blank">Município de Paredes de Coura</a> lançaram à coordenação do AstroCamp o desafio de implementar uma versão mais apelativa e funcional do trilho. O <a href="http://astro.up.pt/" target="_blank">Centro de Astrofísica da Universidade do Porto</a> através do <a href="http://www.iastro.pt/" target="_blank">Instituto de Astrofísica e Ciências do Espaço</a> e o <a href="http://planetario.up.pt/" target="_blank">Planetário do Porto &ndash; Centro Ciência Viva</a> assumiram o projecto, transformando o trilho de modo a integrar comunicação e visualização de informação associada ao Sistema Solar.<br />
+Nesta fase o trilho foi ainda homologado pela agência <a href="http://www.cienciaviva.pt/" target="_blank">Ciência Viva</a> e virá a integrar Rede Municipal de Percursos Pedestres de Paredes de Coura como PR17.</p>
+                </div>
+        </div>
+
+
+<!-- Coluna de conteudo 1 (ecras lg)-->
+    <div class="d-none d-lg-block d-xl-none col-lg-5">
+        <div id = "divcontentleftinfo_LG" class="contentLeft" style="margin-bottom: 20px;">
+                        <p>O projecto do Trilho do Sistema Solar, foi criado no âmbito das atividades do campo de férias científico <a href="https://astrocamp.astro.up.pt/pt/index.html" target="_blank">AstroCamp</a> que tem decorrido nos últimos anos no <a href="http://www.cornodebico.pt/" target="_blank">CEIA &ndash; Centro de Educação e Interpretação Ambiental do Corno de Bico</a>, em Paredes de Coura.<br />
+    Coordenado pelo astrofísico <a href="http://astro.up.pt/caup/index.php?WID=114&CID=1&ID=50&Lang=pt" target="_blank">Carlos Martins</a>, o AstroCamp contou já com a colaboração de cerca de 20 outros investigadores
+    (Portugueses e estrangeiros) da área da astronomia e física, proporcionando a estudantes do ensino secundário de países da União Europeia formação inspiradora e de alta qualidade, repouso e lazer num ambiente isolado e tranquilo, longe do stress dos centros urbanos.</p>
+                    </div>
+                </div>
+
+
+<!-- Coluna de conteudo 2 (ecras lg)-->
+
+                    <div class="d-none d-lg-block d-xl-none col-lg-5">
+                        <div id="divcontentrightinfo_LG" class="contentRightinfo" style="margin-bottom: 20px; padding-right: 3%;">
+                                <p>Numa segunda fase o <a href="http://www.cornodebico.pt/" target="_blank">CEIA &ndash; Centro de Educação e Interpretação Ambiental do Corno de Bico</a> e o <a href="https://www.paredesdecoura.pt/" target="_blank">Município de Paredes de Coura</a> lançaram à coordenação do AstroCamp o desafio de implementar uma versão mais apelativa e funcional do trilho. O <a href="http://astro.up.pt/" target="_blank">Centro de Astrofísica da Universidade do Porto</a> através do <a href="http://www.iastro.pt/" target="_blank">Instituto de Astrofísica e Ciências do Espaço</a> e o <a href="http://planetario.up.pt/" target="_blank">Planetário do Porto &ndash; Centro Ciência Viva</a> assumiram o projecto, transformando o trilho de modo a integrar comunicação e visualização de informação associada ao Sistema Solar.<br />
+            Nesta fase o trilho foi ainda homologado pela agência <a href="http://www.cienciaviva.pt/" target="_blank">Ciência Viva</a> e virá a integrar Rede Municipal de Percursos Pedestres de Paredes de Coura como PR17.</p>
+                            </div>
+                    </div>
+
+
+<!-- Coluna de espaço DRT (ecras md lg xl)-->
+
+                <div class="d-none d-md-block d-lg-block d-xl-block col-md-1 col-lg-1 col-xl-2"></div>
+
+
+</div>
+
+<div class="row" style="width: inherit">
+
+<!-- Coluna de espaço ESQ2 (ecras md lg xl)-->
+                <div class="d-none d-md-block col-md-1 col-lg-1 col-xl-2"></div>
+
+
+<!-- Mapa (ecras xl) -->
+
+<div class="d-none d-xl-block col-xl-8" style="text-align:center; margin-bottom: 10px;">
+<iframe src="https://www.google.com/maps/d/embed?mid=13HUCC7RJb1ajHoAXkm5w0fM3e-4" width="90%" height="650"></iframe>
+<p style="margin-left: 5%; margin-top: 1%;"><strong id="iniciodotrilho_XL">Início do Trilho do Sistema Solar no CEIA</strong><br />
+GPS: 41.9133292, -8.4926981 | N 41 54.800, W 8 29.562</p>
+</div>
+
+
+<!-- Mapa (ecras lg) -->
+
+                <div class="d-none d-lg-block col-lg-10 d-xl-none" style="text-align:center; margin-bottom: 20px;">
+        <iframe src="https://www.google.com/maps/d/embed?mid=13HUCC7RJb1ajHoAXkm5w0fM3e-4" width="90%" height="640"></iframe>
+        <p style="margin-left: 5%; margin-top: 1%;"><strong id="iniciodotrilho_LG">Início do Trilho do Sistema Solar no CEIA</strong><br />
+GPS: 41.9133292, -8.4926981 | N 41 54.800, W 8 29.562</p>
+                </div>
+
+
+<!-- Mapa (ecras md) -->
+
+                <div class="d-none d-md-block col-md-10 d-lg-none d-xl-none" style="text-align:center; margin-bottom: 10px;">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=13HUCC7RJb1ajHoAXkm5w0fM3e-4" width="90%" height="630"></iframe>
+                    <p style="margin-left: 5%; margin-top: 1%;"><strong id="iniciodotrilho_MD">Início do Trilho do Sistema Solar no CEIA</strong><br />
+    GPS: 41.9133292, -8.4926981 | N 41 54.800, W 8 29.562</p>
+                            </div>
+                
+                            <div class="d-none d-md-block col-md-1 col-lg-1 col-xl-2"></div>
+
+</div>
+
+<div class="row" style="width: inherit">
+
+<!-- Coluna de espaço DRT2 (ecras md lg xl)-->
+
+                <div class="d-none d-md-block col-md-1 col-lg-1 col-xl-2"></div>
+
+
+<!-- altimetria (ecras md) -->
+
+                <div class="d-none d-md-block d-lg-none d-xl-none col-md-10" style="text-align:center; margin-left: auto; margin-right: auto; padding-top: 3%; margin-bottom: 20px;">
+                    <div style=" text-align: center; margin-left: auto; margin-right: auto;">
+                        <p style=" margin-left: 5%"><strong id="percurso_MD">Perfil de altimetria do percurso</strong><br />
+                        <a class="altimetriaLink fancybox" id="altimetriaLink" href="imagens/altimetria_full.png"  data-fancybox data-caption="" style="cursor: zoom-in;">
+                            <div class="image-container">
+                                <img class="altimetriaImage" id="altimetriaImage" src="imagens/altimetria.png" id="mask" style="width:90%; height:500;"> </div></a>
+                    </div>
+                    </div>
+
+
+<!-- altimetria (ecras xl) -->
+
+<div class="d-none d-md-none d-lg-none d-xl-block col-xl-8" style="text-align:center; margin-left: auto; margin-right: auto; padding-top: 2%; margin-bottom: 40px;">
+  <div style="text-align: center; margin-left: auto; margin-right: auto;">
+    <p style="margin-left: 5%">
+      <strong id="percurso_XL">Perfil de altimetria do percurso</strong><br />
+    </p>
+    <a class="altimetriaLink fancybox" id="altimetriaLink" href="imagens/altimetria_full.png" data-fancybox style="cursor: zoom-in;">
+      <div class="image-container">
+        <img class="altimetriaImage" id="altimetriaImage" src="imagens/altimetria.png" style="width:90%;">
+      </div>
+    </a>
+  </div>
+</div>
+
+
+<!-- altimetria (ecras lg) -->
+
+<div class="d-none d-md-none d-lg-block d-xl-none col-lg-10" style="text-align:center; margin-left: auto; margin-right: auto; padding-top: 2%; margin-bottom: 40px;">
+<div style=" text-align: center; margin-left: auto; margin-right: auto;"><p style=" margin-left: 5%"><strong id="percurso_LG">Perfil de altimetria do percurso</strong><br />
+<a class="altimetriaLink fancybox" id="altimetriaLink"  href="imagens/altimetria_full.png"  data-fancybox data-caption="" style="cursor: zoom-in;">
+  <div class="image-container">
+    <img class="altimetriaImage" src="imagens/altimetria.png" id="altimetriaImage" style="width:90%; "></div></a>
+</div>
+</div>
+
+
+<div class="d-none d-md-block col-md-1 col-lg-1 col-xl-2"></div>
+
+
+<!-- Carousel (ecras md lg xl) -->
+<div class="d-none d-md-block col-md-1 col-lg-1 col-xl-2"></div>
+<div class="d-none d-md-block col-md-10 col-lg-10 col-xl-8 mx-auto" style="text-align:center">
+
+
+    <div class="pa-carousel-widget" style="width:90%; height:480px; margin-bottom: 30px;text-align:center; margin: 0 auto 30px auto;"
+      data-link="https://photos.app.goo.gl/Q43yDM6qDME2bhJE7"
+      data-title="Trilho do Sistema Solar à escala"
+      data-description="17 new items added to shared album">
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczMa3bpZsQDZyumVgN6S9Hv2OgPdDebOGgFhFU3rUu2mDGzYRwb2rTL4pr510P1XJh8umlrgOfywkvciBmhgmBqF3tdQh0Ws7Jcwsqe4MyAlU_vkbuh6=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczP3UKhhQIrNh2ViCdvlhJaYrWkNkM8o8pLTHy_nmzNAS9Esg1Y3BhQpZ8cnXuhKs9Sre_ZPk755zbMEsy3ohK1oqtpPVpdQNjX_vdqEsC8pW7qn9xv1=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczPaWroVfIx2nWZLRz08tKimyo12OXBEgtm3DfRG5SPVdBB8GdU2cyCiMRZWbItvEepNqiBxoOXZYRzH9EYc8MWoj-JSmQxD5NYoEHeYn1JcYG2W8yws=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczN9jpsm0V_o709Fi2QRkGwB2LbXh5s-4Dcpimq2nMGyj837jefbaNyFdTswy0fI5q6L-sn2cGrlyMEeUZlF6SgoXYqMVY62oFb1KFTm3w89DVLClZng=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczN5qg1J0YwReD0FuOMYOin-n1vcxz9Gq4r4EDO_qj5lK-E9ffLwBXrMIMLtYWqGwWb4P0hPLiGH8jjzC4eEy6pBrlIAZpqNZ5lbI_kjhJd6YapFqisF=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczP44cGRduIiyiVcMM-RcF0b9ouOany7VmOUX0nezbMNr4YzHB2yD96VWzp2weMVeCILXPPVH1EyCV0fD42RPKWJW7wh-VVpLg0DA0FRsXb3K5-xEHGc=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczMJZJNg9ugn6-4_UBF5irImtBwQ07IPNDZOQLz_Fzac0baH4OL_kLDn4MfLC1eyGG85FM3PpTbBvm-hT-RF-vswompQHEmQNugGKM1d-Si5qMjjII8e=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczM4Xshblkze4SO9y9ctzWhwK7WMubC-56ea_t4ctiWGu9-z-WVhZL5_N5p1-sgHlDulrhyMUDhILHs7KsQI9AgJ0_pf6RDtoqauQBOoWE_zbewJ7aVy=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczPPIdthDgWZ31CSTdkqItYjWMruIKx2O9A3pWRk2QNnNgM3ck4oHHAQBqJghlScfS7He28AZ6qI_JD-pv9cg4hjxLWM3vuZUUtWqXcq3ko5_gB16n97=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczN1cRuNwmNzvSVYAwCulPGBmFA3-OfgMonvKqDYR1IjHPUR90IZly732tXcExx372qdmBTRPKF9hS8ncRA1QKVI3vJHhZVMjWbMEHuhMHCr1TCReWYc=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczMf6IkDlw1gTgwGitXysyn8eSLsL6hFqKQcwqTwUGcelmuMZyy5ygFF5hOajTmtOWT-wr33pDXHmWS6_5zzY8DgTShBS5lnuWeGs7adcMS6KtBS8WrW=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczMoU-ALWxeCExdm9UEXGj-AFdZreyd1NtWwIkLQbsK4w5I1NnYxNNccOGluPVQxJEMgFY6PH_CLAyEJMstMHtcbwNqWgRcB1iVtAs8sHxUNNPSAyYjL=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczPwqpDxRysQj9eUM6tQwsi5c_ftG54ZMuPqSfBOxpgqz4L6rhp4fBz1F1EWJl_AmWleY6tJsp60JphWpISh3LuElXKJgSK1RMHV6e7939G5VaKreAkb=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczPAcnQ7iCGSHe4zQSWRT1bYS3nKnZNie-BvRnVXaxSW879Q_DiABcJT15sHHONAyUl6-pL4m2Vp97PRPrcUg9J2Qqn5Cil1H_9K87xbWU4ewTfaMzLY=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczOP80dWqTFxy4sxNUeIIMFxW_q-m9Xa0dWPTGX5k5L0xZuxSsbOSVkP75UTkuzF9cp6Cj8Mbx3HQXcP4w7q0-WGgwdy8PpCMNrOZG7SRepk08p4QVPX=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczPufq8JrNLU-HE13_V-IHPAJX5u9_8Bx6JYdb-F3lVd06rh53V9MjCEhThMyarUNoyDLwlD8XRURB-_tZAlyl3g_7hTNY5lL7PipyI4wN4UImyMjh7q=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczPXFmJW8J198fqYjN43giQsj8e1W4Qrxo_VS__oUxKursKvl8E8EpUUZVmkZhq66JeoybmjO_DOboSkyKUDJgQwij1c5YRjIuzE6D0jYvKC3RKH3FX9=w1920-h1080"></object>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" defer></script>
+
+</div>
+
+<div class="d-none d-md-block col-md-1 col-lg-1 col-xl-2"></div>
+
+<!-- Carousel (ecras xs sm) -->
+<div class="d-sm-block d-md-none d-lg-none d-xl-none col-1 col-sm-1 "></div>
+<div class=" d-md-none d-lg-none d-xl-none col-10 col-sm-10 mx-auto" style="text-align:center">
+
+    <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" defer></script>
+    <div class="pa-carousel-widget" style="width:90%; height:480px; margin-bottom: 30px;text-align:center; margin: 0 auto 30px auto;"
+      data-link="https://photos.app.goo.gl/Q43yDM6qDME2bhJE7"
+      data-title="Trilho do Sistema Solar à escala"
+      data-description="17 new items added to shared album">
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczMa3bpZsQDZyumVgN6S9Hv2OgPdDebOGgFhFU3rUu2mDGzYRwb2rTL4pr510P1XJh8umlrgOfywkvciBmhgmBqF3tdQh0Ws7Jcwsqe4MyAlU_vkbuh6=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczP3UKhhQIrNh2ViCdvlhJaYrWkNkM8o8pLTHy_nmzNAS9Esg1Y3BhQpZ8cnXuhKs9Sre_ZPk755zbMEsy3ohK1oqtpPVpdQNjX_vdqEsC8pW7qn9xv1=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczPaWroVfIx2nWZLRz08tKimyo12OXBEgtm3DfRG5SPVdBB8GdU2cyCiMRZWbItvEepNqiBxoOXZYRzH9EYc8MWoj-JSmQxD5NYoEHeYn1JcYG2W8yws=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczN9jpsm0V_o709Fi2QRkGwB2LbXh5s-4Dcpimq2nMGyj837jefbaNyFdTswy0fI5q6L-sn2cGrlyMEeUZlF6SgoXYqMVY62oFb1KFTm3w89DVLClZng=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczN5qg1J0YwReD0FuOMYOin-n1vcxz9Gq4r4EDO_qj5lK-E9ffLwBXrMIMLtYWqGwWb4P0hPLiGH8jjzC4eEy6pBrlIAZpqNZ5lbI_kjhJd6YapFqisF=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczP44cGRduIiyiVcMM-RcF0b9ouOany7VmOUX0nezbMNr4YzHB2yD96VWzp2weMVeCILXPPVH1EyCV0fD42RPKWJW7wh-VVpLg0DA0FRsXb3K5-xEHGc=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczMJZJNg9ugn6-4_UBF5irImtBwQ07IPNDZOQLz_Fzac0baH4OL_kLDn4MfLC1eyGG85FM3PpTbBvm-hT-RF-vswompQHEmQNugGKM1d-Si5qMjjII8e=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczM4Xshblkze4SO9y9ctzWhwK7WMubC-56ea_t4ctiWGu9-z-WVhZL5_N5p1-sgHlDulrhyMUDhILHs7KsQI9AgJ0_pf6RDtoqauQBOoWE_zbewJ7aVy=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczPPIdthDgWZ31CSTdkqItYjWMruIKx2O9A3pWRk2QNnNgM3ck4oHHAQBqJghlScfS7He28AZ6qI_JD-pv9cg4hjxLWM3vuZUUtWqXcq3ko5_gB16n97=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczN1cRuNwmNzvSVYAwCulPGBmFA3-OfgMonvKqDYR1IjHPUR90IZly732tXcExx372qdmBTRPKF9hS8ncRA1QKVI3vJHhZVMjWbMEHuhMHCr1TCReWYc=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczMf6IkDlw1gTgwGitXysyn8eSLsL6hFqKQcwqTwUGcelmuMZyy5ygFF5hOajTmtOWT-wr33pDXHmWS6_5zzY8DgTShBS5lnuWeGs7adcMS6KtBS8WrW=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczMoU-ALWxeCExdm9UEXGj-AFdZreyd1NtWwIkLQbsK4w5I1NnYxNNccOGluPVQxJEMgFY6PH_CLAyEJMstMHtcbwNqWgRcB1iVtAs8sHxUNNPSAyYjL=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczPwqpDxRysQj9eUM6tQwsi5c_ftG54ZMuPqSfBOxpgqz4L6rhp4fBz1F1EWJl_AmWleY6tJsp60JphWpISh3LuElXKJgSK1RMHV6e7939G5VaKreAkb=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczPAcnQ7iCGSHe4zQSWRT1bYS3nKnZNie-BvRnVXaxSW879Q_DiABcJT15sHHONAyUl6-pL4m2Vp97PRPrcUg9J2Qqn5Cil1H_9K87xbWU4ewTfaMzLY=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczOP80dWqTFxy4sxNUeIIMFxW_q-m9Xa0dWPTGX5k5L0xZuxSsbOSVkP75UTkuzF9cp6Cj8Mbx3HQXcP4w7q0-WGgwdy8PpCMNrOZG7SRepk08p4QVPX=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczPufq8JrNLU-HE13_V-IHPAJX5u9_8Bx6JYdb-F3lVd06rh53V9MjCEhThMyarUNoyDLwlD8XRURB-_tZAlyl3g_7hTNY5lL7PipyI4wN4UImyMjh7q=w1920-h1080"></object>
+      <object data="https://lh3.googleusercontent.com/pw/AP1GczPXFmJW8J198fqYjN43giQsj8e1W4Qrxo_VS__oUxKursKvl8E8EpUUZVmkZhq66JeoybmjO_DOboSkyKUDJgQwij1c5YRjIuzE6D0jYvKC3RKH3FX9=w1920-h1080"></object>
+    </div>
+
+
+</div>
+
+<div class="d-sm-block d-md-none d-lg-none d-xl-none col-1 col-sm-1 "></div>
+
+
+
+
+
+</div>
+
+<!-- fim Pag InformacaodoTrilho -->
+
+</div>
+    </div>
+</div>
+</section>
+
+
+
+
+<script src="languages.js"></script>
+<script language="javascript">
+
+
+    // se o elemento não estiver vísivel, surge com a função e vice-versa
+        function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+        }
+                    
+
+
+// Função que permite a troca do idioma apartir do menu, troca a imagem da altimetria de acordo com o idioma
+function switchLang(option) {
+  if (!languageContent[option]) {
+    console.error("Invalid language:", option);
+    return;
+  }
+
+  localStorage.setItem("preferredLanguage", option);
+  updateLanguageContent(option);
+  console.log("Language switched to", option);
+}
+
+
+
+function updateLanguageContent(lang) {
+  requestAnimationFrame(() => {
+    const content = languageContent[lang];
+
+
+    document.querySelectorAll(".altimetriaImage").forEach(img => {
+      if (content.altimetriaImageSrc) img.src = content.altimetriaImageSrc;
+    });
+
+
+    document.querySelectorAll(".altimetriaLink").forEach(link => {
+      if (content.altimetriaFullHref) link.href = content.altimetriaFullHref;
+    });
+
+
+    for (let key in content) {
+      if (key !== "altimetriaImageSrc" && key !== "altimetriaFullHref") {
+        const el = document.getElementById(key);
+        if (el) el.innerHTML = content[key];
+      }
+    }
+
+
+
+    if (typeof Fancybox !== "undefined") {
+      Fancybox.bind("[data-fancybox]");
+    }
+
+    document.body.style.visibility = "visible";
+  });
+}
+
+function loadPreferredLanguage() {
+  const storedLanguage = localStorage.getItem("preferredLanguage");
+  const defaultLang = 'pt';
+  const languageToLoad = storedLanguage || defaultLang;
+
+  if (!storedLanguage) {
+    localStorage.setItem("preferredLanguage", defaultLang);
+  }
+
+  updateLanguageContent(languageToLoad); 
+}
+
+window.addEventListener('load', loadPreferredLanguage);
+
+
+
+
+// Default language definida para Português
+document.addEventListener("DOMContentLoaded", function() {
+        const savedLang = localStorage.getItem("preferredLanguage") || "pt"; 
+        switchLang(savedLang);
+    });
+
+
+
+        </script>
+</body>
+
+</html>
