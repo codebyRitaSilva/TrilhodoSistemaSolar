@@ -362,6 +362,9 @@ margin-right: 37px;
 cursor: default;
 }
 
+#sectionTitle1 em {
+margin-top: 23px; }
+
 #sectionTitleinfo em {
 margin-top: 23px;
 }
